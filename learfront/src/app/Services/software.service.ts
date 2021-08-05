@@ -14,20 +14,20 @@ export class SoftwareService {
   constructor(private http: HttpClient) { }
 
   public getSoftwares(): Observable<Software[]> {
-    return this.http.get<Software[]>('${this.apisServerUrl}/Softwares/liste');
+    return this.http.get<Software[]>(this.apisServerUrl+'/Softwares/liste');
   }
 
   public addSoftware(software: Software): Observable<Software> {
-    return this.http.post<Software>('${this.apisServerUrl}/Softwares/ajouter', software);
+    return this.http.post<Software>(this.apisServerUrl+'/Softwares/ajouter', software);
   }
 
   
   public updateSoftware(software: Software): Observable<Software> {
-    return this.http.put<Software>('${this.apisServerUrl}/Softwares/modifier', software);
+    return this.http.put<Software>(this.apisServerUrl+'/Softwares/modifier', software);
   }
   
 
   public deleteSoftware(softwareId: number): Observable<void> {
-    return this.http.delete<void>('${this.apisServerUrl}/Softwares/supprimer/${softwareId}');
+    return this.http.delete<void>(this.apisServerUrl+'/Softwares/supprimer/'+softwareId);
   }
 }

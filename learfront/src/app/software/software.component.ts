@@ -8,6 +8,8 @@ import { SoftwareService } from '../Services/software.service';
   templateUrl: './software.component.html',
   styleUrls: ['./software.component.css']
 })
+
+
 export class SoftwareComponent implements OnInit {
 
   public softwares: Software[] = [];
