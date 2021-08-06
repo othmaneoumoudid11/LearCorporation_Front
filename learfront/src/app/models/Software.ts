@@ -1,4 +1,4 @@
-export interface Software {
+export interface Software  {
     id_software : number;
     soft_ref : string;
     soft_manif : string;
