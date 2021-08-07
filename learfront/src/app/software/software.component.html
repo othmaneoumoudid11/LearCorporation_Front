@@ -21,7 +21,7 @@
       <div class="card m-b-30">
          <div class="card-body row">
             <div class="col-6">
-               <a href=""><img src="{{software?.ImageUrl}}" alt="" class="img-fluid rounded-circle w-60"></a>
+               <a href=""><img src="{{software?.imageUrl}}" alt="" class="img-fluid rounded-circle w-60"/></a>
             </div>
             <div class="col-6 card-title align-self-center mb-0">
                <h5>{{software?.soft_ref}}</h5>
@@ -56,20 +56,27 @@
            <form #addForm="ngForm" >
            <div class="form-group">
               <label for="soft_ref">soft_ref</label>
-              <input type="text" ngModel name="soft_ref" class="form-control" id="soft_ref" placeholder="Name" required>
+              <input type="text" ngModel name="soft_ref" class="form-control" id="soft_ref" placeholder="soft_ref" required>
            </div>
            <div class="form-group">
               <label for="soft_manif">soft_manif</label>
-              <input type="text" ngModel name="soft_manif" class="form-control" id="soft_manif" placeholder="Email" required>
+              <input type="text" ngModel name="soft_manif" class="form-control" id="soft_manif" placeholder="soft_manif" required>
            </div>
            <div class="form-group">
               <label for="soft_suppl">soft_suppl</label>
-              <input type="text" ngModel name="soft_suppl" class="form-control" id="soft_suppl" placeholder="Job title" required>
+              <input type="text" ngModel name="soft_suppl" class="form-control" id="soft_suppl" placeholder="soft_suppl" required>
            </div>
            <div class="form-group">
               <label for="soft_familly">soft_familly</label>
-              <input type="text" ngModel name="soft_familly" class="form-control" id="soft_familly" placeholder="Phone" required>
+              <input type="text" ngModel name="soft_familly" class="form-control" id="soft_familly" placeholder="soft_familly" required>
            </div>
+           <div class="form-group">
+            <label for="soft_version">soft_version</label>
+            <input type="text" ngModel name="soft_version" class="form-control" id="soft_version" placeholder="soft_version" required>
+         </div><div class="form-group">
+            <label for="soft_Desc">soft_Desc</label>
+            <input type="text" ngModel name="soft_Desc" class="form-control" id="soft_Desc" placeholder="soft_Desc" required>
+         </div>
            <div class="form-group">
               <label for="ImageUrl">Image URL</label>
               <input type="text" ngModel name="ImageUrl" class="form-control" id="ImageUrl" placeholder="Image URL" required>

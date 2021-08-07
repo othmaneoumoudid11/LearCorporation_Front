@@ -6,5 +6,5 @@ export interface Software  {
     soft_familly : string;
     soft_version : string;
     soft_Desc : string;
-    ImageUrl : string;
+    imageUrl : string
 }
